@@ -69,7 +69,7 @@ ul {
 }
 
 .menu-desktop {
-    /* display: none; */
+    display: none;
 }
 
 .menu {
@@ -93,6 +93,11 @@ ul {
     height: 1.89rem;
 }
 
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 
 #toggleTheme {
@@ -102,3 +107,17 @@ ul {
     transition: all  0.3s ease-in-out;
 }
 
+/* Medidas Responsivas */
+
+@media (min-width: 768px) {  /* A partir de 768px ate o infinito */
+
+    .menu-desktop {
+        display: flex;
+        min-width: 30%;
+    }
+
+    .header-toggle {
+        min-width: 30%;
+    }
+
+}
