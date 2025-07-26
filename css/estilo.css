@@ -1,27 +1,97 @@
+
+/* Definir cores tema Dark */
+:root,
+:root[data-theme="dark"] {
+
+    --cor-fundo: #111217;
+    --cor-texto: #8f8f8f;
+
+    --cor-icone: #ffa927;
+    
+    --cor-link: #f0f0f0;
+    --cor-hover: #e9e9e9;
+
+    --cor-borda: #28292e;
+
+}
+
+:root[data-theme="light"] {
+
+    --cor-fundo: #e9e9e9;
+    --cor-texto: #808080;
+
+    --cor-icone: #12a3f7;
+    
+    --cor-link: #8f8f8f;
+    --cor-hover: #0b0b0f;
+
+    --cor-borda: #9a9a9c;
+}
+
+
+/* Definir cores tema Light */
+
+
+
 * {
     margin: 0;  
     padding: 0;
+    box-sizing: border-box;
 
-} 
+}
 
 body {
-    background: #111217;
-    color: #f0f0f0;    
-    font-family: ;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    /* font-family: ; */
 }
 
 a {
     text-decoration: none;
-    color: #f0f0f0;
+    color: var(--cor-link);
 }
 
-#header {  
+ul {
+    list-style: none;
+}
+
+#header { 
     display: flex;
     flex-wrap: row wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
+    /* z-index: ; */
+    /* position: ; */
+    border-bottom: 1px solid var(--cor-borda);
+    /* background: ; */
 }
 
+.menu-desktop {
+    /* display: none; */
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-texto {
+    color: var(--cor-texto);
+    text-transform: uppercase;
+}
+
+.menu-link.active .menu-texto, 
+.menu-link:hover .menu-texto {
+    color: var(--cor-hover);
+}
+
+#toggleTheme {
+    cursor: pointer;
+    color: var(--cor-icone);
+    font-size: 1.2rem; /* tamanho fonte */
+    transition: all  0.3s ease-in-out;
+}
 
