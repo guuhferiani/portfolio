@@ -81,6 +81,8 @@ ul {
 .menu-texto {
     color: var(--cor-texto);
     text-transform: uppercase;
+    font-size: .75rem; /* tamanho da Fonte */
+    font-weight: 600;
 }
 
 .menu-link.active .menu-texto, 
@@ -107,13 +109,22 @@ ul {
     transition: all  0.3s ease-in-out;
 }
 
+/* Menu Mobile */
+
+#menuMobile {
+    margin-left: 1rem; /* voltar aqui */
+}
+
+
+
+
 /* Medidas Responsivas */
 
 @media (min-width: 768px) {  /* A partir de 768px ate o infinito */
 
     .menu-desktop {
-        display: flex;
-        min-width: 30%;
+        display: flex; /* FLEXBOX */
+        min-width: 30%; 
     }
 
     .header-toggle {
