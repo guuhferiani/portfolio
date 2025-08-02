@@ -174,9 +174,6 @@ ul {
 
 
 
-
-
-
 /* Medidas Responsivas */
 
 @media (min-width: 768px) {
@@ -194,6 +191,10 @@ ul {
 
     .btn-menu-mobile {
         display: none;
+    }
+
+    #home {
+        padding-top: 6rem;
     }
 
 }
