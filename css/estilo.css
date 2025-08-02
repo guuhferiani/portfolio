@@ -99,6 +99,19 @@ ul {
     color: var(--cor-hover);
 }
 
+/* Icones Redes Sociais */
+.social-icon {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+}
+
+
+.menu-link:hover .social-icon {
+    color: var(--cor-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+
 .logo {
     width: 3.25rem;
     height: 1.89rem;

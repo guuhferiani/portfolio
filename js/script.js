@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const toggleTheme = document.getElementById("toggleTheme");
     const rootHtml = document.documentElement;
