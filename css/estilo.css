@@ -27,6 +27,8 @@ League Spartan:
 
     --cor-texto: #8f8f8f;
 
+    --cor-titulo: #e9e9e9;
+
     --cor-icone: #ffa927;
 
     --cor-link: #f0f0f0;
@@ -45,6 +47,7 @@ League Spartan:
     --cor-fundo-secundaria: #c7c8c9;
 
     --cor-texto: #808080;
+    --cor-titulo: #0b0b0f;
 
     --cor-icone: #12a3f7;
 
@@ -85,13 +88,35 @@ ul {
 
 h1 {
     font-size: 2.5rem;
+    /* espessura da fonte */
+    font-weight: 200;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    color: var(--cor-titulo);
     font-weight: 200;
 }
 
 strong {
-    font-weight: ;
+    font-weight: 400;
+    /*     font-family: ;
+    color: #12a3f7; */
 }
 
+p,
+span,
+li {
+    font-size: 1rem;
+}
+
+p {
+    text-align: justify;
+    font-family: var(--fonte-corpo);
+}
 
 
 #header {
@@ -254,10 +279,29 @@ strong {
 }
 
 
+/* Voltar e atualizar */
+#home,
+.projetos,
+.sobre,
+.contato {
+    padding: 2.5rem 1rem;
+}
+
+
+
 /* Medidas Responsivas */
+@media (max-width: 768px) { /* Até 768px */
+    #home {
+        padding-top: 6rem;
+    }
+}
+
 
 @media (min-width: 768px) {
     /* A partir de 768px ate o infinito */
+    #header {
+        padding: 1rem 6rem;
+    }
 
     .menu-desktop {
         display: flex;
@@ -273,8 +317,16 @@ strong {
         display: none;
     }
 
-    #home {
-        padding-top: 6rem;
+    #home,
+    .projetos,
+    .sobre {
+        padding: 8rem 6rem 4rem 6rem;
     }
 
-}
+} /* Fim min-width 768  */
+
+@media (min-width: 1200px) {
+    #home {
+        padding: 6rem 6rem 2rem;
+    }
+} 
