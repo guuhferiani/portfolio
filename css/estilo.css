@@ -323,6 +323,16 @@ p {
         padding: 8rem 6rem 4rem 6rem;
     }
 
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
 } /* Fim min-width 768  */
 
 @media (min-width: 1200px) {
@@ -330,3 +340,9 @@ p {
         padding: 6rem 6rem 2rem;
     }
 } 
+
+@media (min-width: 1400px) { 
+    h1 {
+        font-size: 6.25rem;
+    }
+}
