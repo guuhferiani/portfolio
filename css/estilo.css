@@ -302,12 +302,6 @@ p {
     font-weight: 600;
 }
 
-
-
-
-
-
-
 /* Centralizar DIV Video */
 
 /* .main-content .video {
@@ -327,9 +321,7 @@ p {
     width: 95%;
 }
 
-
-
-
+/* Geral -- Seção */
 /* Voltar e atualizar */
 #home,
 .projetos,
@@ -337,6 +329,23 @@ p {
 .contato {
     padding: 2.5rem 1rem;
 }
+
+.conhecimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--cor-fundo-secundaria);
+    padding: 6.25rem 1rem 2rem;
+    margin-top: -5.5rem;
+}
+
+.conhecimento h2 {
+    font-size: 2rem;
+}
+
+
+
 
 
 
