@@ -1,3 +1,23 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+
+/* Fontes Utilizadas
+Fonte Inter :
+    font-family: "Inter", sans-serif;
+
+League Spartan:
+    font-family: "League Spartan", sans-serif;
+
+*/
+:root {
+    --fonte-menu: "Inter", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+    --fonte-titulo: "League Spartan", sans-serif;
+}
+
+
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
@@ -63,6 +83,17 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+strong {
+    font-weight: ;
+}
+
+
+
 #header {
     display: flex;
     flex-wrap: row wrap;
@@ -92,6 +123,8 @@ ul {
     font-size: .75rem;
     /* tamanho da Fonte */
     font-weight: 600;
+    font-family: var(--fonte-menu);
+    text-rendering: optimizeLegibility;
 }
 
 .menu-link.active .menu-texto,
@@ -153,7 +186,8 @@ ul {
 
 /* Menu Mobile (estilo e animação) */
 
-.menu-mobile {  /* nav */
+.menu-mobile {
+    /* nav */
     position: fixed;
     top: 0;
     right: 0;
@@ -161,10 +195,12 @@ ul {
     z-index: 100;
     transform: translateX(100%);
     display: flex;
-    flex-direction: column; /* voltar */
+    flex-direction: column;
+    /* voltar */
     padding-top: 4rem;
     border-left: 1px solid var(--cor-borda);
-    height: 100vh; /* VH = viewport  height  */
+    height: 100vh;
+    /* VH = viewport  height  */
     width: 35%;
     transition: 0.3s ease-in-out;
 }
@@ -185,6 +221,37 @@ ul {
     padding: 0.5rem 0;
 }
 
+/* Flexbox */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Centralizar DIV Video */
+
+/* .main-content .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+    width: 95%;
+}
 
 
 /* Medidas Responsivas */
