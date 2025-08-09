@@ -92,6 +92,7 @@ h1 {
     font-weight: 200;
 }
 
+
 h1,
 h2,
 h3 {
@@ -259,6 +260,54 @@ p {
     gap: 1.5rem;
 }
 
+.menu-social {
+    gap: 1.2rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: var(--cor-titulo);
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem 1rem;
+    width: 100%;
+    transition: .3s ease-in-out;
+    gap: 0.625rem;
+}
+
+.btn-primario {
+    border: 1px solid var(--cor-titulo);
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+    background: var(--cor-hover);
+}
+
+.btn span,
+.btn i {
+    color: var(--cor-titulo);
+    text-transform: uppercase;
+}
+
+.btn:hover span,
+.btn:hover i {
+    color: var(--cor-fundo);
+    transition: ease-in-out 0.3s;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
 /* Centralizar DIV Video */
 
 /* .main-content .video {
@@ -279,6 +328,8 @@ p {
 }
 
 
+
+
 /* Voltar e atualizar */
 #home,
 .projetos,
@@ -290,14 +341,18 @@ p {
 
 
 /* Medidas Responsivas */
-@media (max-width: 768px) { /* Até 768px */
+@media (max-width: 768px) {
+
+    /* Até 768px */
     #home {
         padding-top: 6rem;
     }
+
 }
 
 
 @media (min-width: 768px) {
+
     /* A partir de 768px ate o infinito */
     #header {
         padding: 1rem 6rem;
@@ -333,15 +388,20 @@ p {
         font-size: 5rem;
     }
 
-} /* Fim min-width 768  */
+
+}
+
+/* Fim min-width 768  */
 
 @media (min-width: 1200px) {
     #home {
         padding: 6rem 6rem 2rem;
     }
-} 
 
-@media (min-width: 1400px) { 
+
+}
+
+@media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
     }
