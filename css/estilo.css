@@ -38,6 +38,10 @@ League Spartan:
 
     --icone-menu-mobile: #e9e9e9;
 
+    --sombra: rgba(245, 245, 245, 0.454);
+
+    --scrollbar: #50525b;
+
 }
 
 /* Definir cores tema Light */
@@ -57,6 +61,9 @@ League Spartan:
     --cor-borda: #9a9a9c;
 
     --icone-menu-mobile: #0b0b0f;
+
+    --sombra: rgba(31, 31, 31, 0.454);
+    --scrollbar: #9c9c9c;
 }
 
 html[data-theme="light"] .logo {
@@ -68,7 +75,8 @@ html[data-theme="light"] .logo {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar) transparent;
 }
 
 body {
@@ -90,6 +98,12 @@ h1 {
     font-size: 2.5rem;
     /* espessura da fonte */
     font-weight: 200;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
 }
 
 
@@ -319,6 +333,7 @@ p {
 .video iframe {
     aspect-ratio: 16/9;
     width: 95%;
+    box-shadow: 0px 15px 15px -2px var(--sombra);
 }
 
 /* Geral -- Seção */
@@ -342,6 +357,9 @@ p {
 
 .conhecimento h2 {
     font-size: 2rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
 }
 
 
@@ -397,6 +415,9 @@ p {
         font-size: 5rem;
     }
 
+    h2 {
+        font-size: 3rem;
+    }
 
 }
 
@@ -407,11 +428,18 @@ p {
         padding: 6rem 6rem 2rem;
     }
 
+    h2 {
+        font-size: 4rem;
+    }
 
 }
 
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
     }
 }
