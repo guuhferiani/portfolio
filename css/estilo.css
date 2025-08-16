@@ -363,6 +363,35 @@ p {
 }
 
 
+/* Projetos */
+
+.projetos {  /* FLEXBOX // Responsividade */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scroll-margin-top: 2.5rem;
+}
+
+.projeto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cover {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+
+
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
@@ -373,7 +402,6 @@ p {
     }
 
 }
-
 
 @media (min-width: 768px) {
 
@@ -417,8 +445,24 @@ p {
     }
 
 }
-
 /* Fim min-width 768  */
+
+
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+    .card-cover {
+        width: 55%;
+    }
+
+    .projeto-card.card-reverse {
+        flex-direction: row-reverse; /* Espelho */
+        /* justify-content: space-between; */
+    }
+
+}
+
 
 @media (min-width: 1200px) {
     #home {
