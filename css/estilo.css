@@ -79,6 +79,10 @@ html[data-theme="light"] .logo {
     scrollbar-color: var(--scrollbar) transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--cor-fundo);
     color: var(--cor-texto);
@@ -104,6 +108,11 @@ h2 {
     font-size: 2rem;
     text-align: center;
     letter-spacing: 0.4rem;
+}
+
+/*  SOBRE  */
+h3 {
+    font-size: 1.55rem; 
 }
 
 
@@ -376,11 +385,13 @@ p {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding-top: 2.5rem;
 }
 
 .projeto-card {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 }
 
 .card-cover {
@@ -390,8 +401,63 @@ p {
     border-radius: 0.5rem;
 }
 
+.card-body { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    gap: 1rem;
+    margin-top: 15px;
+}
 
+.card-title {    /* H3 */
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
 
+.card-description {
+    /* font-size: 1.25rem;  nao uso */
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+}
+
+.card-lista { /* UL */
+    /* margin-left: 1.2rem; */
+    font-family: var(--fonte-menu);
+}
+
+.card-item i { /* Icone da LISTA <li> */
+    margin-right: 10px;
+}
+
+.card-item {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card-item i:hover {
+    color: var(--cor-hover);
+}
+
+.card-button {
+    display: flex;
+    flex-flow: row;  /* Se existir 2 botoes = usar o ROW e WRAP */
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos .btn-primario {
+    margin: auto;
+    width: auto;
+}
+
+.card-button i {
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
@@ -482,5 +548,20 @@ p {
 
     h2 {
         font-size: 4.5rem;
+    }
+
+    /* SOBRE */
+    h3 {
+        font-size: 3.25rem;
+    }
+    
+    .conhecimento,
+    .projetos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
+    .conhecimento h2 {
+        font-size: 4.5rem;
+        text-align: start;
     }
 }
