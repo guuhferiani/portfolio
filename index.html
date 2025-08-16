@@ -4,176 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Feriani - Portfolio</title>
 
-    <meta name="keywords" content="Gustavo Feriani, Feriani, Gustavo, dev, desenvolvedor, projetos, contato">
-    <meta name="description" content="Soluções Digitais e Desenvolvimento Front-End.">
-    <meta name="robots" content="index, follow">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <title>Gustavo Feriani | Portfólio</title>
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- BootStrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
 
-    <!-- MENU -->
     <header id="header">
-        <!-- menu desktop -->
-        <nav class="header-nav">
-            <ul class="menu menu-principal"> <!-- lista nao ordenada -->
+
+        <!-- Menu Desktop -->
+        <nav class="menu-desktop">
+            <ul class="menu menu-principal">
+
                 <li class="menu-item">
                     <a href="#home" class="menu-link active">
-                        <span class="menu-texto"> Home </span>
-                    </a>
+                        <span class="menu-texto"> home </span> </a>
                 </li>
+
                 <li class="menu-item">
                     <a href="#projetos" class="menu-link">
-                        <span class="menu-texto"> Projetos </span>
-                    </a>
+                        <span class="menu-texto"> projetos </span> </a>
                 </li>
+
                 <li class="menu-item">
                     <a href="#sobre" class="menu-link">
-                        <span class="menu-texto"> Sobre </span>
-                    </a>
+                        <span class="menu-texto"> sobre</span> </a>
                 </li>
+
                 <li class="menu-item">
                     <a href="#contato" class="menu-link">
-                        <span class="menu-texto"> Contato </span>
-                    </a>
+                        <span class="menu-texto"> contato </span> </a>
                 </li>
             </ul>
-        </nav> <!-- Fim menu desktop -->
+        </nav>
 
-        <!-- logo -->
+        <!-- Logo Letras Iniciais -->
         <div class="header-logo">
             <a href="#home">
-                <img src="img/logoB.png" alt="" class="logo" data-aos="zoom-in" data-aos-delay="100">
+                <img src="img/logo.svg" alt="" class="logo">
             </a>
         </div>
 
-        <!-- trocar cor tema -->
+        <!-- Icone Trocar Cor Tema -->
         <div class="header-toggle">
-            <i id="toggleTheme" class="bi bi-sun"></i>
-            <!-- aria-label="Alternar tema" -->
-            <!-- Isso ajuda usuários com leitores de tela a entenderem a funcionalidade do botão. -->
+
+            <!-- icone SOL ou LUA -->
+            <i id="toggleTheme" class="bi bi-sun"> </i>
+
+            <button id="menuHamburger" class="btn-menu-mobile">
+                <i class="bi bi-list"> </i> <!-- i = icone -->
+            </button>
+
         </div>
 
 
-
     </header>
-    <!-- FIM MENU DESKTOP -->
 
     <!-- Menu Mobile -->
-    <nav class="nav-mobile">
-        <ul class="menu menu-mobile">
+    <nav id="menuMobile" class="menu menu-principal menu-mobile">
+
+        <ul class="menu-lista">
+
             <li class="menu-item">
                 <a href="#home" class="menu-link active">
-                    <i class="menu-icone bi bi-house-door"></i>
-                    <span class="menu-texto">
-                        Home
-                    </span>
+                    <span class="menu-texto"> home </span>
                 </a>
             </li>
 
             <li class="menu-item">
                 <a href="#projetos" class="menu-link">
-                    <i class="menu-icone bi bi-images"></i>
-                    <span class="menu-texto">
-                        Projetos
-                    </span>
+                    <span class="menu-texto"> projetos </span>
                 </a>
             </li>
 
             <li class="menu-item">
                 <a href="#sobre" class="menu-link">
-                    <i class="menu-icone bi bi-person-fill"></i>
-                    <span class="menu-texto">
-                        Sobre
-                    </span>
+                    <span class="menu-texto"> sobre </span>
                 </a>
             </li>
 
             <li class="menu-item">
                 <a href="#contato" class="menu-link">
-                    <i class="menu-icone bi bi-envelope-fill"> </i>
-                    <span class="menu-texto">
-                        Contato
-                    </span>
+                    <span class="menu-texto"> contato </span>
                 </a>
             </li>
+
         </ul>
+
     </nav>
-    <!-- Fim Menu Mobile -->
+
+    <!-- Principal -->
 
     <main id="home">
+
         <div class="main-content">
 
-            <h1 data-aos="zoom-in" data-aos-delay="500"> <b> Soluções Digitais & </b>
-                Desenvolvimento Front-End.
+            <h1>
+                <!-- Enfase -->
+                <strong>Soluções Criativas &</strong>
+                Desenvolvimento Front-End
+            </h1>
 
-                <p data-aos="zoom-out" data-aos-delay="600">
-                    Gustavo Feriani - SP, Desenvolvedor e Instrutor Front-End.
-                </p>
-            </h1> <!-- slogan -->
+            <p>
+                Gustavo Feriani, São Paulo - SP. Desenvolvedor e Instrutor Front-End.
+            </p>
 
-            <!-- Redes Sociais -->
-            <ul class="menu menu-social" data-aos="fade-up" data-aos-delay="900">
+            <ul class="menu menu-social">
 
                 <li>
-                    <a href="https://github.com/guuhferiani" class="" target="_blank">
-                        <i class="menu-icone bi bi-github"> </i>
+                    <a href="https://github.com/gustavoferiani" class="menu-link" target="_blank">
+                        <i class="bi bi-github social-icon"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#instagram" class="" target="_blank">
-                        <!-- <i class='menu-icone bx bxl-instagram-alt'></i> -->
-                        <i class="menu-icone bi bi-instagram"> </i>
+                    <a href="https://www.instagram.com/gustavo.feriani/" class="menu-link" target="_blank">
+                        <i class="bi bi-instagram social-icon"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#linkedin" class="" target="_blank">
-                        <!-- <i class='menu-icone bx bxl-instagram-alt'></i> -->
-                        <i class="menu-icone bi bi-linkedin"> </i>
+                    <a href="" class="menu-link" target="_blank">
+                        <i class="bi bi-linkedin social-icon"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#facebook" class="" target="_blank">
-                        <!-- <i class='menu-icone bx bxl-instagram-alt'></i> -->
-                        <i class="menu-icone bi bi-facebook"> </i>
+                    <a href="https://www.facebook.com/" class="menu-link" target="_blank">
+                        <i class="bi bi-facebook social-icon"></i>
                     </a>
                 </li>
-            </ul>
 
-            <!-- botao externo -->
-            <a href="#projetos" data-aos="fade-up" data-aos-delay="1000">
-                <button class="btn btn-primary">
-                    <span> Ver Projetos </span>
-                    <i class="bi bi-arrow-down-right"> </i>
+                <li>
+                    <a href="https://wa.me/55119" class="menu-link" target="_blank">
+                        <i class="bi bi-whatsapp social-icon"></i>
+                    </a>
+                </li>
+
+            </ul> <!-- Fim menu-social -->
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <button class="btn btn-primario">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
                 </button>
             </a>
 
-        </div> <!-- main-content -->
+        </div> <!-- Fim main-content -->
 
-        <div class="video" data-aos="fade-up" data-aos-delay="1000">
+        <div class="video">
 
-            <iframe src="https://www.youtube.com/embed/5nEyjYn9_LI?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H"
-                title="HACKING GOOGLE: Series Trailer (:30)" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/8DJPGKYEtz8" title="COD Warzone - Deitando na C4" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -181,419 +167,78 @@
 
     </main>
 
+    <section class="conhecimento">
+
+        <h2>
+            Conhecimento nas principais tecnologias do mercado.
+        </h2>
+
+    </section>
+
+    <!-- Projetos -->
     <section id="projetos" class="projetos">
+        <!-- <h2 class="titulo-proj">Projetos</h2> -->
         <h2>Projetos</h2>
 
+        <!-- Estrutura para os Projetos -->
         <div class="projeto-container">
 
-            <div class="projeto-card">
+            <!-- Projeto / Card 1 -->
+            <article class="projeto-card">
 
-                <img src="img/projetos/games-store.jpg" alt="" class="card-img">
+                <img src="img/projetos/games-store.jpg" alt="" class="card-cover">
 
                 <div class="card-body">
 
                     <h3 class="card-title"> Games Store </h3>
-                    <p class="card-description"> Venda de Games Digitais </p>
+                    <p class="card-description"> Loja online de jogos. </p>
 
                     <ul class="card-lista">
+
                         <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Jogos Ps5
+                            <i> </i>
+                            Jogos PS5
                         </li>
+
                         <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Jogos PC
-                        </li>
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
+                            <i> </i>
                             Jogos Nintendo
                         </li>
-                    </ul>
 
-                </div>
-
-            </div> <!-- fim card 1 -->
-
-
-            <div class="projeto-card card-reverse">
-
-                <img src="img/projetos/josisbox.jpg" alt="" class="card-img">
-
-                <div class="card-body">
-
-                    <h3 class="card-title"> Josi's Box </h3>
-                    <p class="card-description"> Venda de Livros </p>
-
-                    <ul class="card-lista">
                         <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Literatura
-                        </li>
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            História
-                        </li>
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Tecnologia
+                            <i> </i>
+                            Jogos PC
                         </li>
                     </ul>
 
-                </div>
-
-            </div> <!-- fim card 2 -->
-
-            <div class="projeto-card">
-
-                <img src="img/projetos/portfolio.PNG" alt="" class="card-img">
-
-                <div class="card-body">
-
-                    <h3 class="card-title"> Feriani </h3>
-                    <p class="card-description"> Portfolio Digital </p>
-
-                    <ul class="card-lista">
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Projetos
-                        </li>
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Tecnologias
-                        </li>
-                        <li class="card-item">
-                            <i class="icone-seta bi bi-chevron-double-right"></i>
-                            Clientes
-                        </li>
-                    </ul>
 
                 </div>
 
-            </div> <!-- fim card 3 -->
+            </article>
 
-        </div>
-        <!-- Fim Projetos -->
+            <!-- Projeto / Card 2 -->
+            <article class="projeto-card">
+                <img src="img/projetos/josisbox.jpg" alt="" class="">
+            </article>
 
-        <h2> Galeria </h2>
+            <!-- Projeto / Card 3 -->
+            <article class="projeto-card">
+                <img src="img/projetos/portfolio.PNG" alt="" class="">
+            </article>
 
-        <div class="carousel">
-            
-            <input type="radio" name="carousel" id="slide1" checked>
-            <input type="radio" name="carousel" id="slide2">
-            <input type="radio" name="carousel" id="slide3">
 
-            <div class="slides">
-
-                <div class="slide">
-                    <img src="img/slide1.PNG" alt="Imagem 1">
-                </div>
-
-                <div class="slide">
-                    <img src="img/slide2.PNG" alt="Imagem 2">
-                </div>
-
-                <div class="slide">
-                    <img src="img/slide3.PNG" alt="">
-                </div>
-
-            </div> <!-- fim Slides -->
-
-            <div class="navigation">
-                <label for="slide1"> </label>
-                <label for="slide2"> </label>
-                <label for="slide3"> </label>
-            </div>
-        
-        </div>
-
-        
-
-    </section>
-
-
-
-    <section id="sobre" class="sobre">
-
-        <div class="sobre-content1">
-
-            <img src="img/avatar.jpg" class="sobre-perfil" alt="">
-
-            <div class="sobre-descricao">
-
-                <h2>Sobre Mim</h2>
-                <p>
-                    Gustavo Feriani. Entusiasta por tecnologia, Games e PC, meu primeiro "Hello World" foi na
-                    pré-adolescência quanto tive contato com HTML em Tabelas e aqueles websites esquisitos feitos em
-                    Flash 😅. Atualmente curso especiliazação em IA e Machine Learning e atuo como instrutor no Senai
-                    SP.
-                </p>
-
-                <div class="sobre-skills">
-
-                    <i class="bi bi-translate"></i>
-                    <span> Inglês: Intermediário </span>
-
-                </div>
-
-                <div class="descricao-button">
-
-                    <a href="https://www.linkedin.com/in/gustavo-feriani/" target="_blank">
-
-                        <button class="btn btn-primary">
-
-                            <span> Conecte-se Comigo </span>
-                            <i class="bi bi-arrow-up-right"> </i>
-
-                        </button>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Fim Content 1 -->
-
-        <div class="sobre-content2">
-
-            <div class="col1">
-
-                <div class="row1">
-
-                    <h3>Formação</h3>
-
-                    <h4> IA e Machine Learning </h4><!-- Curso -->
-                    <span>Fev 2024 - 2025</span>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-bank"></i>
-                        <span>Cruzeiro do Sul</span>
-                    </div>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-mortarboard"></i>
-                        <span>Pós Gradução</span>
-                    </div>
-                    <!-- nova formação -->
-
-                    <h4> Sistemas para Internet </h4><!-- Curso -->
-                    <span>2020 - 2022</span>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-bank"></i>
-                        <span>FAM</span>
-                    </div>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-patch-check"></i>
-                        <span>Técnologo</span>
-                    </div>
-
-                    <!-- nova formação -->
-                    <h4> Multimidia </h4><!-- Curso -->
-                    <span>2012-2014</span>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-bank"></i>
-                        <span>Senac</span>
-                    </div>
-
-                    <div class="sobre-icones">
-                        <i class="bi bi-award"></i>
-                        <span>Técnico</span>
-                    </div>
-
-                </div> <!-- fim Row 1 -->
-
-
-                <div class="row2">
-
-                    <h3>Experiências</h3>
-
-                    <h4>Instrutor</h4>
-                    <span> Senai. Fev 2012 - Atualmente</span>
-                    <span>Instrutor de Treinamentos e Cursos.</span>
-
-                    <ul class="sobre-lista">
-                        <li class="sobre-item"> Aulas Presenciais </li>
-                        <li class="sobre-item"> Aulas EAD </li>
-                    </ul>
-
-                </div>
-
-            </div> <!-- Fim Coluna 1 -->
-
-            <div class="col2">
-
-                <h3>Cursos</h3>
-
-                <div class="accordion">
-
-                    <div class="accordion-item active">
-
-                        <button class="accordion-header start">
-                            <span> Desenvolvimento Front Angular </span>
-                            <i class="bi bi-caret-down-fill"> </i>
-                        </button>
-
-                        <div class="accordion-body">
-                            <p>Dio. 68 Horas</p>
-                            <p>Desenvolvimento Front End com Angular e desenvolver habilidades práticas para construir
-                                aplicações web modernas e responsivas, enquanto treina recursos de Inteligência
-                                Artificial para se tornar um desenvolvedor completo.</p>
-                        </div>
-
-                    </div> <!-- Fim Curso 1 -->
-
-                    <!-- Curso 2 -->
-                    <div class="accordion-item">
-
-                        <button class="accordion-header">
-                            <span>Google Cloud Engineer</span>
-                            <i class="bi bi-caret-down-fill"> </i>
-                        </button>
-
-                        <div class="accordion-body">
-                            <p>Senai. 40 Horas</p>
-                            <p>Com a certificação Associate Cloud Engineer, é possível implantar aplicativos, monitorar
-                                operações e gerenciar soluções corporativas. Também é possível usar o Console do Google
-                                Cloud e a interface de linha de comando na realização de tarefas comuns baseadas na
-                                plataforma para a manutenção de uma ou mais soluções implantadas que usam os serviços
-                                gerenciados pelo Google ou autogerenciados no Google Cloud.</p>
-                        </div>
-
-
-                    </div> <!-- Fim Curso 2 -->
-
-
-                    <!-- Curso 3 -->
-                    <div class="accordion-item">
-
-                        <button class="accordion-header end">
-                            <span>Google Cloud Computing Foundations</span>
-                            <i class="bi bi-caret-down-fill"> </i>
-                        </button>
-
-                        <div class="accordion-body end">
-                            <p>Senai. 40 Horas</p>
-                            <p>Este curso fornece uma visão geral da computação em nuvem, maneiras de usar o Google
-                                Cloud e diferentes opções de computação.</p>
-                        </div>
-
-                    </div> <!-- Fim Curso 3 -->
-
-                </div> <!-- Fim Accordion -->
-
-            </div>
 
         </div>
 
     </section>
 
-
-    <section id="contato" class="contato">
-        <h2 class="h1 tl-mt-2 gt-2 md-4 ">Contato</h2>
-
-        <p>
-            Estou disponível para orientações e novas conexões.
-            Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.
-        </p>
-
-        <ul class="menu menu-social">
-            <li>
-                <a href="#" class="menu-link" target="_blank">
-                    <i class="menu-icone bi bi-github"> </i>
-                    <span>GitHub</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#" class="menu-link" target="_blank">
-                    <i class="menu-icone bi bi-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="menu-link" target="_blank">
-                    <i class="menu-icone bi bi-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/+55119" class="menu-link" target="_blank">
-                    <i class="menu-icone bi bi-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </a>
-            </li>
-
-        </ul>
-
-        <a href="mailto:gustavo.feriani@sp.senai.br">
-            <button class="btn btn-primary">
-                <i class="menu-icone bi bi-envelope-fill"></i>
-                <span class="email">gustavo.feriani@sp.senai.br</span>
-            </button>
-        </a>
-
-
-        <!-- Forms -->
-        <p>
-            Entre em contato preenchendo o formulário abaixo.
-        </p>
-
-        <form action="https://formspree.io/f/mzzezdln" method="post" class="form-contato"> <!-- Formspree -->
-
-            <label for="nome" class="name-label" id="name-label">
-                Nome
-            </label>
-
-            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
-
-            <label for="email">
-                E-mail
-            </label>
-            
-            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
-
-            <label for="mensagem">
-                Mensagem
-            </label>
-
-            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required>
-
-            </textarea>            
-
-            <button type="submit" class="btn btn-primary">
-                Enviar
-            </button>
-
-
-        </form>
-
-
-    </section><!--  fim contato -->
 
 
     <footer>
-        <p>
-            &copy; 2025. Portfolio desenvolvido para fins Educativos com base nas aulas no
-            <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank">
 
-                Senai Leopoldina - SP</a>.
-            Desenvolvido por <a href="https://github.com/guuhferiani" target="_blank">
-                <i class="bi bi-github"></i>
-                Gustavo Feriani </a>
-        </p>
     </footer>
 
-
     <script src="js/script.js"> </script>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- <script>
-        AOS.init();
-      </script> -->
 
 </body>
 
