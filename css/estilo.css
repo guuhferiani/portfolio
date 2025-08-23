@@ -469,8 +469,19 @@ p {
 
 .sobre-content1, 
 .sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.sobre-logo { /* tag img = IMAGEM AVATAR */
+    width: 100%;
+    border-radius: 50rem;
+    /* font-size: clamp(); */
     
-} 
+}
+
 
 
 
