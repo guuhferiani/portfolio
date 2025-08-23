@@ -459,6 +459,21 @@ p {
     margin-left: 5px;
 }
 
+/* Sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    scroll-margin-top: 2.5rem;
+}
+
+.sobre-content1, 
+.sobre-content2 {
+    
+} 
+
+
+
 /* Medidas Responsivas */
 @media (max-width: 768px) {
 
