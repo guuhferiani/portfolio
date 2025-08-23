@@ -47,7 +47,7 @@ League Spartan:
 /* Definir cores tema Light */
 :root[data-theme="light"] {
 
-    --cor-fundo: #e9e9e9;
+    --cor-fundo: #d6d6d6;
     --cor-fundo-secundaria: #c7c8c9;
 
     --cor-texto: #808080;
@@ -481,7 +481,7 @@ p {
 .sobre-content2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 2rem;
 }
 
@@ -531,7 +531,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    gap: .5rem;
+    gap: .5rem; /* Ajustar */
 }
 
 .sobre-content2 .col1 .row1,
@@ -541,8 +541,69 @@ p {
     gap: .5rem;
 }
 
+/* Accordion FAQ */
+.accordion {
+    display: inline-block;
+    width: 100%;
+}
 
+.accordion-item {
+    width: 100%;
+    display: inline-block;
+}
 
+.accordion-header {
+    display: flex;
+    width: 100%;
+    padding: .75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    text-align: left;
+    border: 1px solid var(--cor-borda);
+    cursor: pointer;
+    color: var(--cor-titulo);
+}
+
+.accordion-header:hover {
+    background: var(--cor-fundo-secundaria);
+    transition: all .3s ease-in-out;
+}
+
+.accordion-header span {
+    font-weight: 400;
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+}
+
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    color: var(--cor-titulo);
+    border: 1px solid var(--cor-borda);
+    gap: .6rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Animação Inversa Fechando */
+.bi-caret-down-fill {
+    transition: all .3s ease-in-out;
+}
+
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg); /* 180 Graus */
+    transition: all .3s ease-in-out;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: var(--cor-fundo-secundaria);
+    transition: all .3s ease-in-out;
+}
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
@@ -594,7 +655,9 @@ p {
     h2 {
         font-size: 3rem;
     }
-
+    .sobre-content2 {
+        align-items: stretch;
+    }
 }
 
 /* Fim min-width 768  */
@@ -636,6 +699,9 @@ p {
     .card-button .btn,
     .description-button .btn {
         width: auto;
+    }
+    .sobre-content2 {
+        align-items: stretch;
     }
 }
 
