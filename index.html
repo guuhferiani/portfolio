@@ -566,12 +566,29 @@
 
                 <form action="" method="post" class="form-email">
                     
-                    <label for="">Senha</label>
-                    <input type="password" placeholder="digite sua senha"> <br>
+                    <!-- Nome -->
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+
+                    <!-- Email -->
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+
+                    <!-- Telefone // Whats -->
+                    <input type="tel" name="telefone" id="telefone" placeholder="
+                    Seu Telefone" >
+
+                    <!-- Assunto -->
+                    <input type="text" name="assunto" placeholder="Assunto" required>
                     
+                    <!-- Mensagem -->
+                    <textarea name="mensagem" rows="6" placeholder="Digite a sua Mensagem" required></textarea>
 
+                    <button type="submit" class="btn btn-primario">
+                        <span>Enviar</span>
+                        <i class="bi bi-send"></i>
+                    </button>
+                    
                 </form>
-
+                
 
             </div>
 
