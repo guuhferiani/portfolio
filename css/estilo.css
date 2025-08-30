@@ -29,7 +29,7 @@ League Spartan:
 
     --cor-titulo: #e9e9e9;
 
-    --cor-icone: #ffa927;
+    --cor-icone: #ebebeb;
 
     --cor-link: #f0f0f0;
     --cor-hover: #e9e9e9;
@@ -53,7 +53,7 @@ League Spartan:
     --cor-texto: #808080;
     --cor-titulo: #0b0b0f;
 
-    --cor-icone: #12a3f7;
+    --cor-icone: #0b0b0f;
 
     --cor-link: #8f8f8f;
     --cor-hover: #0b0b0f;
@@ -113,8 +113,15 @@ h2 {
 /*  SOBRE  */
 h3 {
     font-size: 1.55rem;
+    margin-bottom: 10px;
 }
 
+h4 {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
 h1,
 h2,
@@ -142,6 +149,9 @@ p {
     font-family: var(--fonte-corpo);
 }
 
+span {
+    font-family: var(--fonte-corpo);
+}
 
 #header {
     display: flex;
@@ -531,7 +541,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    gap: .5rem; /* Ajustar */
+    gap: 2rem;
 }
 
 .sobre-content2 .col1 .row1,
@@ -596,7 +606,8 @@ p {
 }
 
 .accordion-item.active .bi-caret-down-fill {
-    transform: rotate(180deg); /* 180 Graus */
+    transform: rotate(180deg);
+    /* 180 Graus */
     transition: all .3s ease-in-out;
 }
 
@@ -655,6 +666,7 @@ p {
     h2 {
         font-size: 3rem;
     }
+
     .sobre-content2 {
         align-items: stretch;
     }
@@ -700,6 +712,7 @@ p {
     .description-button .btn {
         width: auto;
     }
+
     .sobre-content2 {
         align-items: stretch;
     }
