@@ -22,12 +22,13 @@
             <ul class="menu menu-principal">
 
                 <li class="menu-item">
-                    <a href="#home" class="menu-link active">
-                        <span class="menu-texto"> home </span> </a>
+                    <a href="#home" class="menu-link active" title="Ir para Home">
+                        <span class="menu-texto"> home </span>
+                    </a>
                 </li>
 
                 <li class="menu-item">
-                    <a href="#projetos" class="menu-link">
+                    <a href="#projetos" class="menu-link" title="Ir para os Projetos">
                         <span class="menu-texto"> projetos </span> </a>
                 </li>
 
@@ -229,7 +230,9 @@
 
             <!-- Projeto / Card 2 -->
             <article class="projeto-card card-reverse">
-                <img src="img/projetos/josisbox.jpg" alt="" class="card-cover">
+                <img src="img/projetos/josisbox.jpg" class="card-cover"
+                    alt="Capa do livro Harry Potter à venda na loja virtual"
+                    title="Livro Harry Potter - clique para mais detalhes">
 
                 <div class="card-body">
 
@@ -529,23 +532,9 @@
             </li>
 
             <li>
-                <a href="https://www.instagram.com/gustavo.feriani/" class="menu-link" target="_blank">
-                    <i class="bi bi-instagram social-icon"></i>
-                    <span>Instagram</span>
-                </a>
-            </li>
-
-            <li>
                 <a href="" class="menu-link" target="_blank">
                     <i class="bi bi-linkedin social-icon"></i>
                     <span>Linkedin</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.facebook.com/" class="menu-link" target="_blank">
-                    <i class="bi bi-facebook social-icon"></i>
-                    <span>Facebook</span>
                 </a>
             </li>
 
@@ -566,7 +555,7 @@
 
                 <!-- Formspree -->
                 <form action="https://formspree.io/f/xvgbazro" method="post" class="form-contato">
-                    
+
                     <!-- Nome -->
                     <input type="text" name="nome" placeholder="Nome Completo" required>
 
@@ -578,7 +567,7 @@
 
                     <!-- Assunto -->
                     <input type="text" name="assunto" placeholder="Assunto" required>
-                    
+
                     <!-- Mensagem -->
                     <textarea name="mensagem" rows="6" placeholder="Digite a sua Mensagem" required></textarea>
 
@@ -586,34 +575,40 @@
                         <span>Enviar</span>
                         <i class="bi bi-send"></i>
                     </button>
-                    
+
                 </form>
-                
+
             </div>
 
             <!-- Mapa -->
             <div class="contato-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.0582426900114!2d-46.73470933781788!3d-23.527480523706288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9f201158c15%3A0xd24aadb56c742a4!2sHygger!5e0!3m2!1spt-BR!2sbr!4v1756575072544!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.0582426900114!2d-46.73470933781788!3d-23.527480523706288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9f201158c15%3A0xd24aadb56c742a4!2sHygger!5e0!3m2!1spt-BR!2sbr!4v1756575072544!5m2!1spt-BR!2sbr"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-    
+
     </section>
 
     <footer>
-        <p> 
-            &copy;2025. Portfolio desenvolvido para fins educativos com base nas aulas do 
-            <a href="#" class="footer-link" target="_blank"> Senai Leopoldina - SP. 
+        <p>
+            &copy;2025. Portfolio desenvolvido para fins educativos com base nas aulas do
+            <a href="#" class="footer-link" target="_blank"> Senai Leopoldina - SP.
             </a>
-            
+
             Desenvolvido por
             <a href="https://github.com/guuhferiani" class="footer-link" target="_blank">
                 <i class="bi bi-github"></i>
-                Gustavo Feriani 
+                Gustavo Feriani
             </a>
         </p>
 
     </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
 
     <script src="js/script.js"> </script>
 

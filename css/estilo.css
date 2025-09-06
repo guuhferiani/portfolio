@@ -42,6 +42,9 @@ League Spartan:
 
     --scrollbar: #50525b;
 
+    --btn-topo: #f0f0f0;
+    --icone-topo: #28292e;
+
 }
 
 /* Definir cores tema Light */
@@ -64,6 +67,9 @@ League Spartan:
 
     --sombra: rgba(31, 31, 31, 0.454);
     --scrollbar: #9c9c9c;
+
+    --btn-topo: #28292e;
+    --icone-topo: #f0f0f0;
 }
 
 html[data-theme="light"] .logo {
@@ -740,6 +746,33 @@ footer i {
 }
 
 
+/* Botao voltar ao TOPO */
+#btn-topo {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: var(--btn-topo);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: all .3s ease-in-out;
+}
+
+#btn-topo i {
+    font-size: 2rem;
+    color: var(--icone-topo);
+}
+
+#btn-topo:hover {
+    filter: brightness(50%);
+}
+
 /* Medidas Responsivas */
 @media (max-width: 768px) {
 
@@ -752,8 +785,8 @@ footer i {
         grid-template-columns: 1fr;
     }
     .contato-formulario,
-    .contato-mapa {
-        width: 100%;
+    .contato-mapa iframe {
+        width: 90%;
     }
 
     .contato-formulario h2 {
